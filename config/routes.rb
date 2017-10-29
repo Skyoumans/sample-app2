@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/help'
 
-root to: 'application#hello'
+  get 'static_pages/about'
+
+root to: 'static_pages#home'
 end
